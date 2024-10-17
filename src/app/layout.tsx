@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import {Manrope} from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
-// import favicon from "@/app/assets/img/favicon-32x32.png"
 
 const font = Manrope({
   subsets: ["latin"]
@@ -21,10 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" type="image/png" sizes="32x32" href={"favicon"} />
+        <link rel="icon" type="image/png" sizes="32x32" href={"./assets/img/favicon-32x32.png"} />
       </Head>
       <body
-        className={`${font.className} w-full h-full min-h-screen`}
+        className={`${font.className} w-full min-h-screen font-semibold bg-white text-neutral-800`}
       >
         {children}
       </body>
