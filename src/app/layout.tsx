@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import {Manrope} from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import { Provider } from "react-redux";
+import store from "@/redux/store";
 const font = Manrope({
   subsets: ["latin"]
 });
@@ -24,7 +26,9 @@ export default function RootLayout({
       <body
         className={`${font.className} w-full min-h-screen font-semibold bg-white text-neutral-800 dark:bg-slate-900 dark:text-neutral-200`}
       >
-        {children}
+        <Provider store={store}>
+          {children}
+        </Provider>
       </body>
     </html>
   );
