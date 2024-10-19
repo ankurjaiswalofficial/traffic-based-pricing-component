@@ -18,12 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="">
       <Head>
         <link rel="icon" type="image/png" sizes="32x32" href={"./assets/img/favicon-32x32.png"} />
       </Head>
       <body
-        className={`${font.className} w-full min-h-screen font-semibold bg-white text-neutral-800`}
+        className={`${font.className} w-full min-h-screen font-semibold bg-white text-neutral-800 dark:bg-slate-900 dark:text-neutral-200`}
       >
         {children}
       </body>
