@@ -5,6 +5,7 @@ import circles from '@/assets/img/pattern-circles.svg';
 import checkIcon from '@/assets/img/icon-check.svg';
 import sliderIcon from '@/assets/img/icon-slider.svg';
 import RangeSlider from '@/components/range';
+import ThemeToggler from '@/components/theme-toggler';
 
 
 export default function Home() {
@@ -64,6 +65,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <ThemeToggler />
     </div>
   );
 }

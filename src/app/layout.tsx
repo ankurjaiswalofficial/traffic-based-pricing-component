@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import {Manrope} from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
-
 const font = Manrope({
   subsets: ["latin"]
 });
@@ -18,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="">
+    <html lang="en" className="dark">
       <Head>
         <link rel="icon" type="image/png" sizes="32x32" href={"./assets/img/favicon-32x32.png"} />
       </Head>
